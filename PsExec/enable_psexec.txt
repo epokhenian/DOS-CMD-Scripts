@@ -1,0 +1,5 @@
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f
+netsh advfirewall set allprofiles state off
+
+:: Parameters
+-i  => ejecutar en la sesion del usuario
